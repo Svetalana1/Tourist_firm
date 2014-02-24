@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace TouristFirm
 {
-    public partial class ClientRegistration : Form
+    public partial class EmployeeView : Form
     {
-        public ClientRegistration()
+        public EmployeeView()
         {
             InitializeComponent();
         }
-
-        
     }
 }

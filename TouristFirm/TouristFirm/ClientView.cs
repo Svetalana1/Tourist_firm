@@ -10,25 +10,29 @@ using System.Windows.Forms;
 
 namespace TouristFirm
 {
-    public partial class MainForm : Form
+    public partial class ClientView : Form
     {
-        public MainForm()
+        public ClientView()
         {
             InitializeComponent();
+
         }
 
-        private void buttonClient_Click(object sender, EventArgs e)
+        private void ClientView_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void buttonRedGreenTours_Click(object sender, EventArgs e)
         {
             ClientView clientView = new ClientView();
             clientView.ShowDialog();
         }
 
-        private void buttonEmployee_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            LogView logView = new LogView();
-            logView.ShowDialog();
-        }
 
-        
+        }
     }
 }
