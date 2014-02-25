@@ -73,6 +73,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationEmploee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationEmploee.Designer.cs">
+      <DependentUpon>RegistrationEmploee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationTours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationTours.Designer.cs">
+      <DependentUpon>RegistrationTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tourist_firmDataSet.cs">
+      <DependentUpon>Tourist_firmDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tourist_firmDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tourist_firmDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tourist_firmDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tourist_firmDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ClientView.resx">
       <DependentUpon>ClientView.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +120,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrationEmploee.resx">
+      <DependentUpon>RegistrationEmploee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationTours.resx">
+      <DependentUpon>RegistrationTours.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,9 +135,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Tourist_firmDataSet.xsc">
+      <DependentUpon>Tourist_firmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tourist_firmDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Tourist_firmDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Tourist_firmDataSet.xss">
+      <DependentUpon>Tourist_firmDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tourist_firm.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
